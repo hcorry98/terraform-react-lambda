@@ -24,7 +24,7 @@ module "lambda_api" {
   app_name                     = var.app_name
   domain                       = local.domain
   url                          = local.url
-  api_url                      = var.apiUrl
+  api_url                      = local.api_url
   ecr_repo                     = var.ecr_repo
   image_tag                    = var.image_tag
   lambda_endpoint_definitions  = var.lambda_endpoint_definitions
