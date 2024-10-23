@@ -10,17 +10,14 @@ variable "app_name" {
 variable "domain" {
   type        = string
   description = "The domain for the project."
-  default     = var.url
 }
 variable "url" {
   type        = string
   description = "The URL for the project."
-  default     = lower("${var.project_name}.com")
 }
 variable "api_url" {
   type        = string
   description = "The URL for the API."
-  default     = "api.${var.url}"
 }
 
 variable "env" {
