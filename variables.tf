@@ -10,14 +10,17 @@ variable "app_name" {
 variable "domain" {
   type        = string
   description = "The domain for the project."
+  default     = ""
 }
 variable "url" {
   type        = string
   description = "The URL for the project."
+  default     = ""
 }
 variable "api_url" {
   type        = string
   description = "The URL for the API."
+  default     = ""
 }
 
 variable "env" {

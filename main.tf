@@ -1,6 +1,6 @@
 locals {
-  url = var.url == "" ? lower("${var.project_name}.com") : var.url
-  domain = var.domain == "" ? local.url : var.domain
+  url     = var.url == "" ? lower("${var.project_name}.com") : var.url
+  domain  = var.domain == "" ? local.url : var.domain
   api_url = var.api_url == "" ? "api.${local.url}" : var.api_url
 }
 
