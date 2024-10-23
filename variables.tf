@@ -7,6 +7,22 @@ variable "app_name" {
   description = "The name of the project in kebab-case."
 }
 
+variable "domain" {
+  type        = string
+  description = "The domain for the project."
+  default     = var.url
+}
+variable "url" {
+  type        = string
+  description = "The URL for the project."
+  default     = lower("${var.project_name}.com")
+}
+variable "api_url" {
+  type        = string
+  description = "The URL for the API."
+  default     = "api.${var.url}"
+}
+
 variable "env" {
   type        = string
   description = "The branch being deployed"
